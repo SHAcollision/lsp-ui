@@ -27,6 +27,12 @@ Set this environment variable if you want to test in regtest:
 ```bash
 REACT_APP_API_URL="https://api.stag.blocktank.to/blocktank/api/v2/"
 ```
+## Run development environment using Docker
+You can change the `REACT_APP_MAINNET` or `REACT_APP_API_URL` environment values on `docker-compose.yml` .Then:
+
+```
+docker compose up -d
+```
 
 ## Available Scripts
 
