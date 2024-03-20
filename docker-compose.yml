@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  lsp-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - REACT_APP_MAINNET=true
+      # - REACT_APP_API_URL="https://api.stag.blocktank.to/blocktank/api/v2/"
+    volumes: 
+      - .:/usr/src/app
+    ports:
+      - "3000:3000"
